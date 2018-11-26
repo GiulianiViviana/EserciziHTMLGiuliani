@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>	
-		article.a1{
-			top:200px;
-			 -ms-transform: rotate(45deg); /* IE 9 */
-			-webkit-transform: rotate(45deg); /* Safari */
-			transform: rotate(45deg);
-			heigth:200px;
+		<style>
+		article{
+			height:200px;
 			width:200px;
+			margin:100px 100px 100px 100px;
+		}
+		article.a1{
+
+			transform: rotate(45deg);
 			background-color:red;
+		}
+		article.a2{
+			
+			transform: scale(0.7, 0.7);
+			background-color:yellow;
+		}
+		article.a3{
+
+		    transform: matrix(1, -0.3, 0, 1, 0, 0);
+			background-color:green;
 		}
     	</style>
 	</head>
