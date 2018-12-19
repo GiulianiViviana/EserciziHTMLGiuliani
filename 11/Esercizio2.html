@@ -6,21 +6,24 @@
 			list-style-type: none;
 			margin:0px;
 			padding:0px;
-			width:200px;
+			width:25%;
+			position:fixed;
+			height:100%;
+			overflow:auto;
 			background-color:white;
 		}
 		li a{
-			padding:30px 40px;
+			padding:5px 10px;
 			display:block;
-			color:#000;
+			color:black;
 			text-decoration:none;
 		}
-		li a:hover{
+		li a:hover:not(.active){
 			background-color:black;
 			color:white;
 		}
-		a.active {
-        background-color: red;
+		li a.active {
+        background-color: green;
         color: white;
         }
 		</style>
@@ -29,13 +32,14 @@
 	<body>
 	<h1> Esercizio 11.2</h1>
 	<ul>
-		<li>Primo</li>
-		<li>Secondo</li>
-		<li>Terzo</li>
+		<li><a class="active" href="pagina1.html" target="Uno">Primo</a></li>
+		<li><a href="pagina2.html" target="Uno">Secondo</a></li>
+		<li><a href="pagina3.html" target="Uno">Terzo</a></li>
 	</ul>
-	<div style="padding:20px;height:1500px;">
-		<h1>Fixed Top Nav</h1>
-		<h2> The navigation bar will stay at the top of the page while scrolling</h2>
+	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+		<iframe name="Uno" src="pagina1.html" width="1000" height="500"></iframe>
+		
+	
 	</div>
 	</body>
 </html>
